@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Webpage</title>
+        <script>
+            function show(){
+                alert("Beware of the admin Master Sambhram Ghosh");
+            }
+            function disp(){
+                var a=confirm("You know our beloved Master?");
+                if(a){
+                    alert("Then bow down to Master Sambhram Ghosh");
+                }
+                else{
+                    alert("How dare you not know him, ask for forgiveness from the Master");
+                }
+            }
+            function get(){
+                var b=prompt("How do you rate the Master out of 10");
+                if(b!="NULL"){
+                    if(b<8)
+                    document.write("You rated the master ("+b+"/10), how dare you rate him so low? Get ready for your PUNISHMENT");
+                    else
+                    document.write("You rated the master ("+b+"/10), our Master deserves (10/10) though, anyway he will take it.");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="show()" value="1st CLick">
+        <br><br>
+        <input type="button" onclick="disp()" value="2nd Click">
+        <br><br>
+        <input type="button" onclick="get()" value="3rd Click">
+    </body>
+</html>
